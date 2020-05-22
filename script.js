@@ -46,16 +46,20 @@ function generatePassword() {
   if (!(includeLower) && !(includeUpper) && !(includeNumbers) && !(includeSpecChars)) {
     alert('No selection was chosen. Please click the Generate button again.');
     return "";
-  } else if (includeLower) {
+  }
+  if (includeLower) {
     // lowercase - concatenate to the temp list
     fullTempList = lowerCharList;
-  } else if (includeUpper) {
+  }
+  if (includeUpper) {
     // uppercase - concatenate to the temp list
     fullTempList = fullTempList.concat(lowerCharList.toUpperCase());
-  } else if (includeNumbers) {
+  }
+  if (includeNumbers) {
     // numbers - concatenate to the temp list
     fullTempList = fullTempList.concat(numberList.toString());
-  } else if (includeSpecChars) {
+  }
+  if (includeSpecChars) {
     // special characters - concatenate to the temp list
     fullTempList = fullTempList.concat(specialCharlist);
   }
